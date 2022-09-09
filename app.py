@@ -40,9 +40,10 @@ external_stylesheets = [
 
 app=dash.Dash(__name__,external_stylesheets=external_stylesheets)
 server = app.server
+
 app.layout=html.H1('hello world welcome to python')
 
-app.layout=html.Div([
+app.layout=html.Div(children=[
     html.H1("India's Covid 19 Dashboard",style={'color':'#fff','text-align':'center','backgroundColor':'blue'}),
     html.Div([
         html.Div([
